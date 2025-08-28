@@ -54,6 +54,17 @@ h2 {
   border-top: 1px dotted #ccc;
 }
 
+@media (max-width: 480px) {
+  .section {
+	padding: 0.5em;
+	border-top: 1px dotted #ccc;
+	margin: 0 1em;
+  }
+  p {
+	margin: 0.5em;
+  }
+}
+
 .section .bd {
   margin-left: 140px;
 }
@@ -89,7 +100,9 @@ h2 {
 .daterange {
   color: #808080;
 }
-
+.company-name {
+	padding: .25em;
+}
 /* --- Responsive Images --- */
 /* Default (desktop-first) */
 img {
@@ -182,12 +195,8 @@ img {
 
 	</div>
 
-	<div class="section intro">
-	  <p>I'm a mentor and an engineering leader. Leaders roll up their sleeves and demonstrate success.
-		Leaders can't write code 100% of the time, but they can't do it 0% of the time either.
-		I work to find the right balance, writing code and solving problems side-by-side with my team, gaining their confidence and really understanding the challenges.
-		This makes me an effective executive, planning for growth and understanding our products and operations.</p>
-	  <p>I'm expert with Python, GCP, AWS, Docker, and too many other technologies to list here.</p>
+	<div class="section">
+	  <p>I'm a mentor and engineering leader. Expert with Python, GCP, AWS, Docker, and too many other technologies to list here.</p>
 	</div>
 
 	<div class="section">
@@ -208,182 +217,93 @@ img {
 		<div class="bd">
 			<ul>
 				<li>
-					<img alt="Ozeki" src="./ozeki.png" /><em style="padding: .25em">Ozeki AI,</em>San Francisco<br />
+					<img alt="Ozeki" src="./ozeki.png" /><em class="company-name">Ozeki AI</em><br />
 					<span class="daterange">[<em>2025</em>]
 				</span>
 					<p>Co-Founder and CTO</p>
 					<p>Ozeki is software to automate business negotiations. Create contract playbooks containing your requirements and negotiation fallbacks. Create winning strategies and efficient trades to get you the best possible deal. <a href="https://ozeki.ai">ozeki.ai</a></p>
 				</li>
-				<li><img alt="Amazon" src="./smile.jpeg" /><em style="padding: .25em">Amazon,</em>San Francisco<br />
-					<span class="daterange">[2017&ndash;2024]
+				<li><img alt="Amazon" src="./smile.jpeg" /><em class="company-name">Amazon Music</em><br />
+					<span class="daterange">[2019&ndash;2024]
 				</span>
-					<p>Head of Playback</p>
+					<p>Head of Playback (L7)</p>
 					<p>Leader of the Playback team at Amazon Music. Software and operations for flawless music and
 						podcast playback for 60 million customers.
 						Negotiated technical aspects of major-label contracts (Sony, UMG, and Warner).
 						Developed, launched, and maintained Dolby Atmos and Sony spatial playback.
 						Directed streaming security including encryption, cryptography choices, and authentication.
 						Owned all music licensing and delivery services across phones, tablets, desktops, FireTV, set-top boxes, and 100 million Echo devices.</p>
-				</li>
-				<li><img alt="Grand Rounds" src="./included-health.png" /><em>Included Health</em>, San Francisco<br />
-					<span class="daterange">[2013&ndash;2016</em>]
+
+					<img alt="Amazon" src="./smile.jpeg" /><em class="company-name"></em>Amazon.com</em><br />
+					<span class="daterange">[2017&ndash;2019]
 				</span>
-					<p>Vice President of Engineering</p>
-					<p>Formerly Grand Rounds. Founding member and Head of Engineering team.  Built and led Engineering while simultaneously developing and delivering the Company's products. Sourced and hired 39 engineers, including Architect, Directors, and individual contributors.  Implemented a Lean system to deliver new products and features&mdash;on-time and on-budget. Designed and evangelized Agile methods and best practices within Engineering and Product. Managed multiple scrum teams and eliminated cross-team dependencies.  Ensured HIPAA compliance and chaired the Information Security Committee.  Managed the production of automated software testing and deployment systems.  Ensured availability of a 100% AWS deployment.</p>
-					<p>Ultimately responsible for Engineering velocity and the proper functioning of the entire application.</p>
+					<p>Head of AUI (Amazon User Interface)</p>
+					<p>Leader of the AUI team. Manager of managers in SFO, SEA, and BLR.
+						Simultaneously supporting over 800 teams that rely upon AUI to deliver a consistent experience
+						for Amazon shoppers and developing the next generation of rendering libraries to support the growth
+						of the retail website.
+						Realized \$507MM annualized OPS through roadmap efforts in Q1 and Q2 of 2018 through site-wide UX changes.</p>
+				</li>
+				<li><img alt="Grand Rounds" src="./included-health.png" /><em class="company-name">Included Health</em><br />
+					<span class="daterange">[2013&ndash;2016]
+				</span>
+					<p>VPE</p>
+					<p>Formerly Grand Rounds.
+						Founding member and Head of Engineering team.
+						Built and led Engineering while simultaneously developing and delivering the Company's products.
+						Sourced and hired 39 engineers, including Architect, Directors, and individual contributors.
+						Ensured HIPAA compliance and chaired the Information Security Committee.
+					</p>
 					  <a href="https://patentimages.storage.googleapis.com/a5/a5/d5/f5fe92133cb72b/US11269758.pdf">US-11,669,437</a> and <a href="https://patentimages.storage.googleapis.com/67/e2/27/a85e665a66856c/US20200285682A1.pdf">US-20200285682-A1</a>.
 
 				</li>
-				<li><img alt="Servio" src="./servio.png" /><em>Servio, Inc.</em>, San Francisco<br />
+				<li><img alt="Servio" src="./servio.png" /><em class="company-name">Servio, Inc.</em><br />
 					<span class="daterange">[2012&ndash;<em>2013</em>]
 				</span>
-					<p>Vice President of Engineering</p>
-					<p>Led Engineering team.  Identified and led execution of a technical road-map that extracted and surfaced costs from a complex crowd-souring system; critical data that had previously been practically unavailable.  Conceived and led an effort to visualize critical operational data from the crowd in a format understandable outside of the Engineering department; again, critical data that had been previously inaccessible.</p>
-					<p>Ultimately responsible for all software development and the proper functioning of the entire application.</p>
+					<p>VPE</p>
+					<p>Led Engineering team and growth of a complex crowd-working system.
+						Responsible for all software development and the proper functioning of the business.</p>
 				</li>
-				<li><img alt="Reputation.com" src="./rdc.png" /><em>Reputation.com</em>, Redwood City<br />
+				<li><img alt="Reputation.com" src="./rdc.png" /><em>Reputation.com</em><br />
 					<span class="daterange">[2011&ndash;<em>2012</em>]
 				</span>
-					<p>Vice President of Engineering</p>
+					<p>VPE</p>
 					<p>Responsible for all aspects of the Company's 34-person
 						Engineering team. Managed, streamlined, and improved software
 						development and operations across all of the Company's core
-						technologies: Linux, Apache, PHP, MySQL, Java, JavaScript, Apache
-						Thrift, and MongoDB.
-					<ul>
-						<li>Designed and implemented Product-to-Engineering pipeline
-							incorporating Agile methods.</li>
-						<li>Mentored engineers at all levels, increasing productivity
-							and excitement.</li>
-						<li>Lead successful hiring effort, adding 16 skilled engineers
-							to team. Partnered with HR to establish career succession
-							planning and review.</li>
-						<li>Lead successful effort to replace all production
-							hardware, virtualizing compute and storage resources, drastically
-							reducing down time.</li>
-						<li>Standardized multiple build and deploy processes.</li>
-						<li>Implemented web testing across multiple product lines.</li>
-						<li>Lead successful effort to quantify and monitor product
-							performance through real-time data gathering.</li>
-					</ul>
-				<p />
+						technologies.</p>
 				</li>
-				<li><a id="hero"></a><strong>Hero.com, LLC</strong><br />
+				<li><em>Hero.com, LLC</em><br />
 				<span class="daterange"> [2008&ndash;2011]</span>
 					<p>
-						<img alt="TransactionSpace" src="./hero-shield-logo.jpg" /><em>Hero&mdash;Legal
-								eDiscovery & Document Review</em><br />Lead Engineer-Product Manager
+						Lead Engineer and Product Manager
 					</p>
 					<p>
 						Designed, built, and deployed a cloud-based content management and
 						content review web application for attorneys, forensic
 						accountants, and others, with the need to quickly search millions
 						of pages of unstructured data. Managed remote team of three
-						engineers. Grew product to $200,000 in annual gross revenue.
-						Integrated multiple C and C++ applications through the Java Native
-						Interface (JNI).
-						Horizontally scaled document processing through Amazon Web
-						Services' Elastic Compute Cloud (AWS/EC2). Leveraged Apache Lucene
-						and Apache Solr for full-text search; the Dojo Toolkit for
-						XMLHttpRequest (XHR/Ajax) and Javascript templating; and
-						OpenOffice for document conversion and normalization.
-					</p>
-					<p>
-						Product <a href="/public/demo.html"
+						engineers. Product <a href="/public/demo.html"
 							title="Hero Demonstration Movie" target="_blank">demo</a>.
 					</p>
-					<br />
-					<p>
-						<img alt="TransactionSpace" src="http://hero.net/images/ts-logo.png" /><br />Lead Engineer-Product Manager
-					</p>
-
 					<p>Designed, built, and deployed a social workspace for
-						attorneys. Managed team of three engineers. Leveraged Catalyst, a
-						Perl MVC framework for structure and routing; PostgreSQL for
-						persistence; DBIx::Class for object relational mapping (ORM);
-						PDF::API2 for PDF generation; and eFax developer tools for barcode
-						recognition.</p>
-					<p>
-						Product <a href="/public/tour.html"
+						attorneys. Product <a href="/public/tour.html"
 							title="TransactionSpace Demonstration Movie" target="_blank">demo</a>.
-					</p></li>
+					</p>
+				</li>
 
-				<li><strong>Howard Rice Nemerovski Canady Falk & Rabkin</strong>,
-					San Francisco, California<br /> Business Associate <span
-					class="daterange">[2007&ndash;2008]</span>
+				<li><em>Howard Rice Nemerovski Canady Falk & Rabkin</em><br />
+					<span class="daterange">[2007&ndash;2008]</span>
+					<p>Business Associate</p>
 					<p>Structured and drafted venture capital financing
-						transactions. Wrote, reviewed, and negotiated documents for
-						business transactions. Extensive work negotiating software and
-						digital content licensing for both licensors and licensees.
-						Drafted DMCA and CDA compliant policies for clients with Internet
-						operations. Negotiated legal terms for services agreements and
-						strategic business alliances for clients with SaaS business
-						models.</p></li>
-				<li><strong>United States Court of Appeals for the Sixth Circuit</strong>, Louisville, Kentucky<br /> Clerk to <a
+						transactions.</p>
+				</li>
+				<li><em>United States Court of Appeals for the Sixth Circuit</em><br />
+					<span class="daterange">[2005&ndash;2006]</span>
+					<p>Clerk to <a
 					href="http://en.wikipedia.org/wiki/Danny_Julian_Boggs"
-					target="_blank" title="Wikipedia entry for Judge Boggs">Danny J. Boggs</a>, Chief Judge <span
-					class="daterange">[2005&ndash;2006]</span>
-					<p>Researched and analyzed federal and state law issues
-						requiring decision by the court including: patent, copyright and
-						trademark; labor and employment; contracts; sovereign immunity and
-						state’s rights; immigration; and death penalty and criminal law.
-						Drafted memoranda analyzing cases and motions before the Court.
-						Engaged in oral argument with and recommended specific outcomes to
-						Judge Boggs. Drafted opinions and orders consistent with the
-						Court’s rulings.</p></li>
-				<li><strong>Hero Consulting</strong>, Santa Monica, California<br />
-					Partner <span class="daterange">[1998&ndash;2003]</span>
-					<p>
-						<em>Computer Generated Imagery</em>&mdash; Consultant for digital
-						feature <a href="http://www.imdb.com/name/nm1509147/?ref_=ttfc_fc_cr486" target="_blank" title="Kenneth Berland IMDB entry">film and television commercial production.</a> Designed and implemented <a href="http://web.archive.org/web/19981205123027/http://www.martian-tools.com/software.html" target="_blank" title="Product website from 1998">custom rendering solutions</a> in C.  Film projects included <em>The Core</em>, <em>Pearl Harbor</em> and <em>Driven</em>.
-						Television commercial projects included <a
-							href="http://www.vimeo.com/6690467" target="_blank" title="Energizer commercial"><em>Energizer Titanium</em></a> and <a href="http://www.vimeo.com/11799535" target="_blank" title="AT&amp;T commerical"><em>AT&amp;T Ants</em></a>. Production company clients included Rhythm & Hues, Asylum, Method Studios, Ring of Fire, and Zen Kitty.
-					</p>
-					<p>
-						<em>Software Development</em>&mdash;Consultant for open source web-based
-						systems, including the venture-backed startups <a
-							href="http://web.archive.org/web/20001109090300/http://www.filmson.com/"
-							target="_blank" title="Website from 2000">Filmson.com</a> and <a href="http://web.archive.org/web/20001109171800/http://www4.funbets.com/mod_newsite/home.cgi" target="_blank" title="Website from 2000">Funbets.com</a>.
-						Created <a href="http://web.archive.org/web/19991009052116/http://itcor.com/" target="_blank" title="Website from 1999">Pocket Paralegal</a> for wireless access to Westlaw legal research. Designed and built a LAMP-based content management system and distributed hosting solution in a Linux environment.</p></li>
-
-				<li><strong>Twentieth Century Fox/VIFX</strong>, Los Angeles,
-					California<br /> Technical Director <span class="daterange">[1996&ndash;1998]</span>
-					<p>
-						Created digital effects for feature films including <a
-							href="http://www.imdb.com/name/nm1509147/" target="_blank"><em>Volcano</em>,
-							<em>Jingle all the Way</em>, and <em>Face/Off</em></a>. Supervised
-						teams in creating systems for the visualization of special
-						effects. Provided in-house consulting for complex aspects of
-						digital film-making.
-					</p></li>
-
-
-				<li><strong>Rutt Video (RVI)</strong>, New York, New York<br />
-					Animator <span class="daterange">[1993&ndash;1995]</span>
-					<p>
-						Created digital effects for television and television commercials
-						using Silicon Graphics (SGI) hardware under the mentorship of <a
-							title="Steve Rutt Obituary" target="_blank"
-							href="http://www.nytimes.com/2011/05/29/arts/steve-rutt-an-inventor-behind-early-video-animation-dies-at-66.html?_r=0">Steve
-							Rutt</a>.
-					</p>
-					<p>
-						<a href="http://vimeo.com/16906233" title="RVI Demo Reel"
-							target="_blank">Demo Reel</a>
-					</p></li>
-
-
-				<li><strong><a href="http://www.hero.net/sandwich/"
-						target="_blank">The Heroic Sandwich</a></strong>, New York, New
-					York<br /> Proprietor <span class="daterange">[1994&ndash;1995]</span>
-					<p>
-						Partner in <a
-							title="New York's Latest Virtual Trend: Hip Cybercafes on the Infobahn"
-							href="http://articles.latimes.com/1995-06-29/business/fi-18601_1_internet-cafe"
-							target="_blank">New York City’s (arguably) first</a> Internet
-						cafe. Offered connectivity, sandwiches, and email in an informal
-						setting.
-					</p></li>
+					target="_blank" title="Wikipedia entry for Judge Boggs">Danny J. Boggs</a>, Chief Judge
+				</li>
 			</ul>
 		</div>
 	</div>
@@ -393,37 +313,16 @@ img {
 		<div class="bd">
 			<ul>
 				<li><strong>University of Southern California School
-						of Law,</strong> J.D.<br /> Los Angeles, California <span
-					class="daterange">[2002&ndash;2005]</span>
+						of Law,</strong> J.D.<br />
 					<ul>
 						<li>Order of the Coif (top 10%)</li>
 						<li>Southern California Law Review, <a
 							href="http://lawweb.usc.edu/why/students/orgs/lawreview/membership/Masthead-Volume78.cfm"
 							target="_blank">Articles Editor</a></li>
-						<li>High Honors Grades in
-							<ul>
-								<li>Business Organizations, Civil Procedure, Contracts,
-									Criminal Law, Evidence, Federal Courts, Gender Discrimination,
-									Intellectual Property, and International Law</li>
-							</ul>
-						</li>
-						<li>Honors Grades in
-							<ul>
-								<li>Constitutional Law I, Criminal Procedure, Internet Law,
-									Legal Profession (Ethics), Poverty Law, Property, and Taxation</li>
-							</ul>
-						</li>
 					</ul></li>
 
 				<li><strong>University of Wisconsin, Madison,</strong> B.S.<br />
-					Madison, Wisconsin <span class="daterange">[1987&ndash;1991]</span>
 					<ul>
-						<li>Majors in
-							<ul>
-								<li>Political Science and
-								<li>Creative Writing</li>
-							</ul>
-						</li>
 					</ul></li>
 			</ul>
 		</div>
@@ -446,7 +345,6 @@ img {
 	<div class="ft">
 		<strong>Kenneth Berland</strong> &mdash; <a
 			href="mailto:ken&#064;hero.net" title="Click To Email">ken&#064;hero.net</a>
-		&mdash; 
 	</div>
 
 </body>
