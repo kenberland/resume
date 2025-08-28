@@ -2,6 +2,7 @@
 <html>
 <head>
 <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="keywords"
 	content="Kenneth Berland, Berland, resume, resumes, circum vitae, cv, curriculum vitae, attorney, engineering manager, manager, vice president of engineering, vpe, web, developer, web development">
 <meta name="description" content="Kenneth Berland&apos;s Resume">
@@ -10,94 +11,147 @@
 <!--  Include all css so the resume is self-contained -->
 <style type="text/css" media="all">
 body {
-	font-family: Lucida Grande, Verdana;
-	margin: auto;
-	text-align: left;
-	width: 57em;
-	font-size: 13px;
+  font-family: Lucida Grande, Verdana, sans-serif;
+  margin: auto;
+  text-align: left;
+  max-width: 57em; /* was fixed width */
+  padding: 0 1em;  /* add breathing room on mobile */
+  font-size: 16px; /* larger base font for readability */
+  line-height: 1.5;
 }
 
 a {
-	color: #000;
-	text-decoration: none;
-	border-bottom: 1px dashed #000;
+  color: #000;
+  text-decoration: none;
+  border-bottom: 1px dashed #000;
 }
 
 .hd {
-	color: #666;
-	margin-bottom: 3em;
+  color: #666;
+  margin-bottom: 2em;
 }
 
 h1 {
-	margin: 0.5em 0 0.3em 0;
-	border-bottom: 1px solid #000000;
-	color: #64261e;
-	font-size: 200%;
-}
-
-.email,.phone {
-	float: right;
-}
-
-.section {
-	clear: both;
-	margin-top: 1.5em;
-	padding-top: 1em;
-	border-top: 1px dotted #ccc;
-}
-
-.section .bd {
-	margin-left: 140px;
+  margin: 0.5em 0 0.3em 0;
+  border-bottom: 1px solid #000000;
+  color: #64261e;
+  font-size: 2em;
 }
 
 h2 {
-	margin-top: 0;
-	color: #1e5c64;
+  color: grey;
+  margin: 0;
+  padding: 0;
+  font-size: 1.0em;
+}
+.address {
 	font-style: italic;
-	float: left;
-	width: 140px;
+}
+.section {
+  clear: both;
+  margin-top: 1.5em;
+  padding-top: 1em;
+  border-top: 1px dotted #ccc;
+}
+
+.section .bd {
+  margin-left: 140px;
 }
 
 .section .bd ul {
-	margin-top: 0;
+  margin-top: 0;
 }
 
 .ft {
-	text-align: center;
-	padding: 1em;
-	border-top: 1px solid #aaa;
-	margin-top: 4em;
+  text-align: center;
+  padding: 1em;
+  border-top: 1px solid #aaa;
+  margin-top: 4em;
 }
 
 .subject {
-	font-style: italic;
-	padding-right: 0.3em;
+  font-style: italic;
+  padding-right: 0.3em;
 }
 
 .indented_left {
-	padding-left: 2em;
+  padding-left: 2em;
 }
 
-.jobs>li {
-	margin-bottom: 1em;
+.jobs > li {
+  margin-bottom: 1em;
 }
 
 .extra_bottom_spacing {
-	margin-bottom: 1em;
+  margin-bottom: 1em;
 }
 
 .daterange {
-	color: #808080;
+  color: #808080;
+}
+
+/* --- Responsive Images --- */
+/* Default (desktop-first) */
+img {
+  height: 2.5em;   /* desktop size */
+  width: auto;
+  max-width: 100%;
+  vertical-align: middle;
+  display: inline-block;
+
+  /* Add affordance */
+  padding: 0.5em;               /* whitespace around logo */
+  margin: 0.5em 0.75em 0.5em 0; /* space from text */
+}
+
+/* Mobile overrides */
+@media (max-width: 768px) {
+  img {
+    height: 3em;   /* smaller on tablets/phones */
+  }
+}
+
+@media (max-width: 480px) {
+  img {
+    height: 3em;
+  }
+}
+
+/* --- Responsive tweaks --- */
+@media (max-width: 768px) {
+  body {
+    font-size: 15px;
+    padding: 0 1em;
+  }
+
+  .section .bd {
+    margin-left: 0;
+  }
+  h1 {
+    font-size: 1.4em;
+  }
+
+  h2 {
+    font-size: 1.2em;
+  }
+
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 1.4em;
+  }
+
+  h2 {
+    font-size: 1.2em;
+	line-height: 90%;
+  }
 }
 </style>
-
-<!--[if IE 7]>
-    <style type="text/css">
-      .email {
-        margin-top: 1.25em;
-      }
-    </style>
-    <![endif]-->
 
 
 <script type="text/javascript">
@@ -121,16 +175,19 @@ h2 {
 
 <body>
 	<div class="hd">
-		<a class="email" href="mailto:ken&#064;hero.net"
-			title="Click To Email">ken&#064;hero.net</a>
-		<h1 class="fn n">Kenneth Berland</h1>
-		<strong class="subject">Address:</strong> <span class="adr">2263
-			Derby Street, Berkeley, California 94705</span>
+		<h1>Kenneth Berland</h1>
+		<h2>ken&#064;hero.net</h2>
+		<h2>310-383-7981</h2>
+		<h2 class="address">Berkeley, CA</span>
+
 	</div>
 
 	<div class="section intro">
-	  <p>I'm a mentor and an engineering leader by example. I believe that engineering managers need to be engineering leaders as well. Leaders roll up their sleeves and demonstrate success. As teams grow, leaders can't write code 100% of the time, but they can't do it 0% of the time either. I work to find the right balance, writing code and solving problems side-by-side with my team, gaining their confidence and really understanding the challenges. &quot;Boots on the ground&quot; engineering allows me to be an effective executive, planning for growth and understanding our products and operations.</p>
-	  <p>I love Ruby, Rails, Puppet, and AWS. I work with these tools and JavaScript every day and have also worked extensively with Go, Java, PHP, C, and Perl.</p>
+	  <p>I'm a mentor and an engineering leader. Leaders roll up their sleeves and demonstrate success.
+		Leaders can't write code 100% of the time, but they can't do it 0% of the time either.
+		I work to find the right balance, writing code and solving problems side-by-side with my team, gaining their confidence and really understanding the challenges.
+		This makes me an effective executive, planning for growth and understanding our products and operations.</p>
+	  <p>I'm expert with Python, GCP, AWS, Docker, and too many other technologies to list here.</p>
 	</div>
 
 	<div class="section">
@@ -139,7 +196,7 @@ h2 {
 			<ul>
 				<li>Leader and technical problem solver.</li>
 				<li>Team builder and hands-on manager.</li>
-				<li>Twenty years of product-focused software development.</li>
+				<li>Over twenty years of product-focused software development.</li>
 				<li>Process-oriented, data-driven innovator.</li>
 			</ul>
 		</div>
@@ -150,21 +207,41 @@ h2 {
 		<h2>Employment History:</h2>
 		<div class="bd">
 			<ul>
-				<li><img height="20px" alt="Grand Rounds" src="./gr.png" /><em>Grand Rounds, Inc.</em>, San Francisco, California<br />
-					<span class="daterange">[2013&ndash;<em>November 2016</em>]
+				<li>
+					<img alt="Ozeki" src="./ozeki.png" /><em style="padding: .25em">Ozeki AI,</em>San Francisco<br />
+					<span class="daterange">[<em>2025</em>]
+				</span>
+					<p>Co-Founder and CTO</p>
+					<p>Ozeki is software to automate business negotiations. Create contract playbooks containing your requirements and negotiation fallbacks. Create winning strategies and efficient trades to get you the best possible deal. <a href="https://ozeki.ai">ozeki.ai</a></p>
+				</li>
+				<li><img alt="Amazon" src="./smile.jpeg" /><em style="padding: .25em">Amazon,</em>San Francisco<br />
+					<span class="daterange">[2017&ndash;2024]
+				</span>
+					<p>Head of Playback</p>
+					<p>Leader of the Playback team at Amazon Music. Software and operations for flawless music and
+						podcast playback for 60 million customers.
+						Negotiated technical aspects of major-label contracts (Sony, UMG, and Warner).
+						Developed, launched, and maintained Dolby Atmos and Sony spatial playback.
+						Directed streaming security including encryption, cryptography choices, and authentication.
+						Owned all music licensing and delivery services across phones, tablets, desktops, FireTV, set-top boxes, and 100 million Echo devices.</p>
+				</li>
+				<li><img alt="Grand Rounds" src="./included-health.png" /><em>Included Health</em>, San Francisco<br />
+					<span class="daterange">[2013&ndash;2016</em>]
 				</span>
 					<p>Vice President of Engineering</p>
-					<p>Founding member and Head of Engineering team.  Built and led Engineering while simultaneously developing and delivering the Company's products. Sourced and hired 39 engineers, including Architect, Directors, and individual contributors.  Implemented a Lean system to deliver new products and features&mdash;on-time and on-budget. Designed and evangelized Agile methods and best practices within Engineering and Product. Managed multiple scrum teams and eliminated cross-team dependencies.  Ensured HIPAA compliance and chaired the Information Security Committee.  Managed the production of automated software testing and deployment systems.  Ensured availability of a 100% AWS deployment.</p>
+					<p>Formerly Grand Rounds. Founding member and Head of Engineering team.  Built and led Engineering while simultaneously developing and delivering the Company's products. Sourced and hired 39 engineers, including Architect, Directors, and individual contributors.  Implemented a Lean system to deliver new products and features&mdash;on-time and on-budget. Designed and evangelized Agile methods and best practices within Engineering and Product. Managed multiple scrum teams and eliminated cross-team dependencies.  Ensured HIPAA compliance and chaired the Information Security Committee.  Managed the production of automated software testing and deployment systems.  Ensured availability of a 100% AWS deployment.</p>
 					<p>Ultimately responsible for Engineering velocity and the proper functioning of the entire application.</p>
+					  <a href="https://patentimages.storage.googleapis.com/a5/a5/d5/f5fe92133cb72b/US11269758.pdf">US-11,669,437</a> and <a href="https://patentimages.storage.googleapis.com/67/e2/27/a85e665a66856c/US20200285682A1.pdf">US-20200285682-A1</a>.
+
 				</li>
-				<li><img height="20px" alt="Servio" src="./servio.png" /><em>Servio, Inc.</em>, San Francisco, California<br />
+				<li><img alt="Servio" src="./servio.png" /><em>Servio, Inc.</em>, San Francisco<br />
 					<span class="daterange">[2012&ndash;<em>2013</em>]
 				</span>
 					<p>Vice President of Engineering</p>
 					<p>Led Engineering team.  Identified and led execution of a technical road-map that extracted and surfaced costs from a complex crowd-souring system; critical data that had previously been practically unavailable.  Conceived and led an effort to visualize critical operational data from the crowd in a format understandable outside of the Engineering department; again, critical data that had been previously inaccessible.</p>
 					<p>Ultimately responsible for all software development and the proper functioning of the entire application.</p>
 				</li>
-				<li><img height="20px" alt="Reputation.com" src="./rdc.png" /><em>Reputation.com</em>, Redwood City, California<br />
+				<li><img alt="Reputation.com" src="./rdc.png" /><em>Reputation.com</em>, Redwood City<br />
 					<span class="daterange">[2011&ndash;<em>2012</em>]
 				</span>
 					<p>Vice President of Engineering</p>
@@ -194,7 +271,7 @@ h2 {
 				<li><a id="hero"></a><strong>Hero.com, LLC</strong><br />
 				<span class="daterange"> [2008&ndash;2011]</span>
 					<p>
-						<img height="20px" alt="TransactionSpace" src="http://hero.net/images/hero-shield-logo.jpg" /><em>Hero&mdash;Legal
+						<img alt="TransactionSpace" src="./hero-shield-logo.jpg" /><em>Hero&mdash;Legal
 								eDiscovery & Document Review</em><br />Lead Engineer-Product Manager
 					</p>
 					<p>
@@ -212,12 +289,12 @@ h2 {
 						OpenOffice for document conversion and normalization.
 					</p>
 					<p>
-						Product <a href="http://hero.net/video.php"
+						Product <a href="/public/demo.html"
 							title="Hero Demonstration Movie" target="_blank">demo</a>.
 					</p>
 					<br />
 					<p>
-						<img width="120px" alt="TransactionSpace" src="http://hero.net/images/ts-logo.png" /><br />Lead Engineer-Product Manager
+						<img alt="TransactionSpace" src="http://hero.net/images/ts-logo.png" /><br />Lead Engineer-Product Manager
 					</p>
 
 					<p>Designed, built, and deployed a social workspace for
@@ -227,7 +304,7 @@ h2 {
 						PDF::API2 for PDF generation; and eFax developer tools for barcode
 						recognition.</p>
 					<p>
-						Product <a href="http://www.transactionspace.net/static/tour.html"
+						Product <a href="/public/tour.html"
 							title="TransactionSpace Demonstration Movie" target="_blank">demo</a>.
 					</p></li>
 
